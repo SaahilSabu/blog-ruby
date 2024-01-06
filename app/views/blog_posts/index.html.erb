@@ -4,17 +4,17 @@
 <div class = "bg-gray-100">
 <span class="draft"> Drafted </span>
 <h2> <%= link_to blog_post.title, blog_post %> </h2>
-<p> <%= blog_post.body %> </p>
+<p> <%= blog_post.content %> </p>
 </div>
 <% elsif blog_post.scheduled? %>
 <div class = "bg-yellow-100">
 <span class="draft"> Scheduled for <%= blog_post.published_at %> </span>
 <h2> <%= link_to blog_post.title, blog_post %> </h2>
-<p> <%= blog_post.body %> </p>
+<p> <%= blog_post.content %> </p>
 </div>
 <% else %>
 <h2> <%= link_to blog_post.title, blog_post %> </h2>
-<p> <%= blog_post.body %> </p>
+<p> <%= blog_post.content %> </p>
 <% end %>
 </div>
 <% end %>
